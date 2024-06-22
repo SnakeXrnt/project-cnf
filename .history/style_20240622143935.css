@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ:wght@100..400&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
+
+.playwrite-nz-<uniquifier> {
+  font-family: "Playwrite NZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: #000; /* Fallback color */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.spotify {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+button.ready {
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+    padding-top: 20px;
+}
+
+button.ready:hover {
+    background-color: #ff69b4;
+}
+
+button.ready h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.filling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lyric1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.lyric1 p {
+    margin: 10px;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.greetings p {
+    margin: 2px;
+    text-align: center;
+}
+
+/* style.css */
+
+.greetings1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.greetings2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 80vw;
+}
+
+.to-grettings2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.greetings2 p {
+    font-family: "Playfair Display", serif;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+}
+
+.waiting-bar {
+    width: 80%;
+    height: 5px;
+    background-color: #ddd;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.waiting-bar .progress {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 20s linear;
+}
+
+.loading-container {
+    width: 200px;
+    height: 10px;
+    background-color: #f0f0f000;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.loading-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #0074D9;
+    position: absolute;
+    animation: reduceWidth 20s linear forwards;
+}
+
+@keyframes reduceWidth {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
