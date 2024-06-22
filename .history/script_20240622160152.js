@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const filling2Div = document.querySelector('.filling2');
     const filling3Div = document.querySelector('.filling3');
     const audio = document.getElementById('background-music');
-    const progressBar = document.querySelector('.loading-bar');
+    const progressBar = document.querySelector('.waiting-bar .progress');
     const photos = document.querySelectorAll('.photos img');
     const filling3Paragraphs = document.querySelectorAll('.filling3 p');
 

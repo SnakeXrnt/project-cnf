@@ -146,11 +146,11 @@ button.ready h2 {
     width: 80vw;
 }
 
-.to-grettings2 , .to-grettings3{
+.to-grettings2 {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #ff46a2;
+    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
@@ -227,15 +227,13 @@ body {
     transition: opacity 2s ease;
     width: 70vw;
     height: auto;
-    
+    padding-top: 50px;
 }
 
 .photos {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .filling2 {
@@ -248,33 +246,4 @@ body {
     overflow-x: hidden;
 }
 
-.filling3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-
-.to-filling3 {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Fade-in effect for filling3 paragraphs */
-.filling3 p {
-    font-size: larger;
-    opacity: 0;
-    transition: opacity 3s ease-in-out; /* Adjust duration as needed */
-}
-
-.filling3 p.fade-in {
-    opacity: 1;
-}
 

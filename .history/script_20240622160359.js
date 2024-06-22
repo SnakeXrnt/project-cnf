@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 showNextPhoto(0);
                 autoScrollFilling2();
-            }, 43000); // Transition to filling2 after 35 seconds
+            }, 40000); // Transition to filling2 after 35 seconds
         }, 20000); // Transition to filling after 20 seconds
     });
 

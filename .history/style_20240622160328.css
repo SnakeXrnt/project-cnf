@@ -269,7 +269,6 @@ body {
 
 /* Fade-in effect for filling3 paragraphs */
 .filling3 p {
-    font-size: larger;
     opacity: 0;
     transition: opacity 3s ease-in-out; /* Adjust duration as needed */
 }
